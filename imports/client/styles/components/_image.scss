@@ -1,0 +1,11 @@
+.image{
+    height: 100px;
+    width: 100px;
+    background-image: url("/images/me.jpg");
+    background-size: cover;
+}
+
+
+.image--round{
+    border-radius: 50%;
+}

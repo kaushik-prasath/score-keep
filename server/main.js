@@ -36,4 +36,23 @@ Meteor.startup(() => {
     let karthik = new Programmer('Karthik',21,'JAVA');
     console.log(karthik.getGreeting());
 */
+
+
+/*Object Spread operator and object property shorthand*/
+
+// var home = {
+//     bedroom: 2,
+//     bathroom:1.5,
+// }
+// var built = 2008;
+
+// var newHome = {
+//     ...home,
+//     bedroom:5,
+//     built,
+//     flooring:'carpet'
+// }
+
+// console.log(newHome);
+
 });

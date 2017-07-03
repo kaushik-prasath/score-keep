@@ -1,0 +1,22 @@
+.college{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    // word-break: break-word;
+    // word-wrap: break-word;
+}
+
+.college__name{
+    font-weight: 400;
+    font-size: 1.8rem;
+    flex-wrap: wrap;
+}
+
+.college__stats{
+    font-style: italic;
+    font-size: 1.5rem;
+}
+
+.college__actions{
+    flex-shrink: 0;
+}

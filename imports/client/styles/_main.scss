@@ -11,20 +11,45 @@
 html{
     font-size: 62.5%;
 }
+//Variables
+
+//Green
+$green: lighten(#a8f254,20%);
+$green-border: darken($green, 80%);
+
+//blue
+$blue:lighten(#69bfea,20%);
+$blue-border: darken($blue,80%);
+
+//red
+$red:lighten(#ea6868,20%);
+$red-border:darken($red,80%);
+
+
+
+
+
 
 body{
     font-family: 'Roboto Slab', serif;
-   background: #999;
+    background: #eeeeee;
     font-size: 1.6rem;
 }
 
 h1{
     font-weight: 200;
-    color:white;
+    color:#ffffff;
     font-size: 2.4rem;
 }
 
+input,form,select{
+    font-size: 1.5rem;
+}
 
-
+@import './components/button';
+@import './components/item';
 @import './components/title-bar';
 @import './components/wrapper';
+@import './components/college';
+@import './components/form';
+@import './components/image';

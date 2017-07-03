@@ -4,7 +4,7 @@ import {Meteor} from 'meteor/meteor';
 import {Tracker} from 'meteor/tracker';
 
 
-import {College} from './../imports/api/college';
+import {College, calculateCollegePositions} from './../imports/api/college';
 import App from './../imports/ui/App';
 
 
@@ -17,8 +17,11 @@ Meteor.startup( () => {
                     score:-1
                 }
             }).fetch();
+
+            let positionedColleges = calculateCollegePositions(college);
+            console.log(positionedColleges);
             let title = 'Leaderboard App';
             let name = 'Kaushik Prasath';
-            ReactDOM.render(<App college={college} title={title} name={name}/>, document.getElementById('app'));
+            ReactDOM.render(<App college={positionedColleges} title={title} name={name}/>, document.getElementById('app'));
         });
 });
