@@ -53,3 +53,30 @@ input,form,select{
 @import './components/college';
 @import './components/form';
 @import './components/image';
+
+
+@media only screen and (max-width: 350px) {
+    .form{
+        display: flex;
+    }
+    .form__input{
+        flex-grow: 2;
+        padding: 0 1.1rem;
+    }
+    .button{
+        flex-grow: 1;
+        flex-basis: 2.0rem;
+        padding: 0.3rem;
+        font-size: 1.3rem;
+    }
+    .college{
+        display: flex;
+    }
+    .college__stats{
+        flex-basis: 24.0rem;
+        flex-grow: 3;
+    }
+    .college__actions{
+        flex-grow: 1;
+    }
+}

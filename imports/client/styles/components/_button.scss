@@ -9,7 +9,8 @@
     font-weight: 600;
     padding: 1.3rem;
     transition: background .2s ease,transform .2s ease;
-    flex-shrink: 1;
+    flex-basis: 4.0rem;
+    flex-grow: 1;
 
     &:hover{
         background: #e8e8e8;
