@@ -25,8 +25,9 @@ export default class CollegeList extends React.Component{
     render(){
         return(
             <div>
+                
                <FlipMove duration={400} easing="ease" maintainContainerHeight={true}>
-                    {this.renderCollege()}
+                    {this.renderCollege()}    
                 </FlipMove>
                 
             </div>
