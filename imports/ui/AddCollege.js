@@ -70,11 +70,11 @@ export default class AddCollege extends React.Component {
         return (
             <div className="item">
                  <form className="form" onSubmit={this.handleSubmit}>
-                        <input className="form__input" type="text" name="collegeName" placeholder="Enter a College Name"/>
+                        <input className="form__input" type="text" name="collegeName" placeholder="Enter a College Name" autoComplete="off" autoFocus/>
                         <button className="button">Add College</button>
                     </form>
                 <form className="form" onSubmit={this.handleSubmit2}>
-                        <input className="form__input" type="text" name="collegeName2" placeholder="Enter a existing College Name"/>
+                        <input className="form__input" type="text" name="collegeName2" placeholder="Enter a existing College Name" autoComplete="off"/>
                         <button className="button">Delete College</button>
                     </form>
                       
