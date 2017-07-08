@@ -12,8 +12,9 @@ export default class AddCollege extends React.Component {
             let nameDoesExist = false;
 
             let names = colleges.find((c)=> {
-                c.name = c.name.toUpperCase();
-                collegeName = collegeName.toUpperCase();
+                collegeName = collegeName.toLowerCase();
+                c.name = c.name.toLowerCase();
+                
 
                 if(c.name === collegeName){
                     alert('College already exists');
@@ -24,6 +25,7 @@ export default class AddCollege extends React.Component {
             });
 
             if(collegeName && !nameDoesExist){
+                
                 e.target.collegeName.value = '';
                  College.insert({
                         name: collegeName,
