@@ -12,8 +12,8 @@ export default class AddCollege extends React.Component {
             let nameDoesExist = false;
 
             let names = colleges.find((c)=> {
-                collegeName = collegeName.toLowerCase();
-                c.name = c.name.toLowerCase();
+                
+                
                 
 
                 if(c.name === collegeName){
