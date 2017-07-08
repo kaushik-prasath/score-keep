@@ -6,14 +6,14 @@ export default class AddCollege extends React.Component {
     
      handleSubmit(e){
             var collegeName = e.target.collegeName.value;
+            
+
             e.preventDefault();
             let colleges = College.find().fetch();
 
             let nameDoesExist = false;
 
             let names = colleges.find((c)=> {
-                
-                
                 
 
                 if(c.name === collegeName){
