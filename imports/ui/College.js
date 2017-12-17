@@ -50,8 +50,10 @@ export default class CollegeCom extends React.Component{
 
                  
                  </div>
-                    
+                 <FlipMove duration={800} easing="ease-out" maintainContainerHeight={true}>
+
                  {this.renderScore()}
+                 </FlipMove>
             </div>
         )
     }
