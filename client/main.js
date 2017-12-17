@@ -20,7 +20,7 @@ Meteor.startup( () => {
 
             let positionedColleges = calculateCollegePositions(college);
             console.log(positionedColleges);
-            let title = 'Leaderboard App';
+            let title = 'Zone Score Board';
             let name = 'Kaushik Prasath';
             ReactDOM.render(<App college={positionedColleges} title={title} name={name}/>, document.getElementById('app'));
         });
