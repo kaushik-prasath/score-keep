@@ -9,6 +9,7 @@ export default class AddCollege extends React.Component {
             
 
             e.preventDefault();
+            debugger;
             let colleges = College.find().fetch();
 
             let nameDoesExist = false;
