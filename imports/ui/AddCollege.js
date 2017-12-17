@@ -35,49 +35,15 @@ export default class AddCollege extends React.Component {
         }
     }    
 
-       handleSubmit2(e){
-           var collegeName = e.target.collegeName2.value;
-           e.preventDefault();
-           let colleges = College.find().fetch();
-           
-             let nameDoesExist = false;
-
-           let names = colleges.find((c)=> {
-                c.name = c.name.toUpperCase();
-                collegeName = collegeName.toUpperCase();
-
-
-                if(c.name === collegeName){
-                     e.target.collegeName2.value = '';
-                     var doc = College.findOne({name: collegeName});
-                       College.remove({
-                            _id:doc._id
-                     });
-                    nameDoesExist = true;
-                    return;    
-                }
-            });
-
-             if(collegeName && !nameDoesExist){
-                e.target.collegeName2.value = '';
-                  alert('Enter a existing College name');
-           }
-               
-         
-        }
+   
     
     render(){
         return (
             <div className="item">
                  <form className="form" onSubmit={this.handleSubmit}>
-                        <input className="form__input" type="text" name="collegeName" placeholder="Enter a College Name" autoComplete="off" autoFocus/>
-                        <button className="button">Add College</button>
-                    </form>
-                <form className="form" onSubmit={this.handleSubmit2}>
-                        <input className="form__input" type="text" name="collegeName2" placeholder="Enter a existing College Name" autoComplete="off"/>
-                        <button className="button">Delete College</button>
-                    </form>
-                      
+                        <input className="form__input" type="text" name="collegeName" placeholder="Enter a Zone" autoComplete="off" autoFocus/>
+                        <button className="button">Add Zone</button>
+                    </form>       
                   
             </div>
         );

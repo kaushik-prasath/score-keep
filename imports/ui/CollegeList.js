@@ -12,7 +12,7 @@ export default class CollegeList extends React.Component{
         if(this.props.colleges.length === 0){
             return (
                 <div className="item">
-                    <p className="item__message">Enter Colleges to get started!</p>
+                    <p className="item__message">Enter Zone  to get started!</p>
                 </div>
             )
         }else{

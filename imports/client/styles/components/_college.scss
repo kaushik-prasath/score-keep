@@ -1,22 +1,45 @@
+
+@import url('https://fonts.googleapis.com/css?family=Acme');
 .college{
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
+    flex-direction: column;
+    // max-width: 200px;
     // word-break: break-word;
     // word-wrap: break-word;
 }
 
 .college__name{
-    font-weight: 400;
-    font-size: 1.8rem;
+    font-weight: 500;
+    font-size: 2.8rem;
     flex-wrap: wrap;
+    text-align: center;
+    margin-left: 0.5em;
+    font-family: 'Acme', sans-serif;
 }
 
 .college__stats{
     font-style: italic;
-    font-size: 1.5rem;
+    font-size: 2rem;
+    font-weight: 600;
+    padding: 20px;
+    text-align: center;
 }
 
+.college__stats__2{
+    font-style: italic;
+    font-size: 2rem;
+    padding: 20px;
+    text-align: center;
+}
+
+.border_box{
+    border: 2px solid grey;
+}
+
+
 .college__actions{
+    margin-top: 20px;
     flex-shrink: 0;
 }
